@@ -1,0 +1,42 @@
+@keyframes bkg {
+    10%{background: linear-gradient(to right,blue,red);}
+    20%{background: linear-gradient(to left,red,yellow);}
+    50%{background: linear-gradient(to right,yellow,green);}
+    100%{background: linear-gradient(to left,yellow,green);}
+}
+
+.title-main{
+    direction: rtl;
+    margin-right:3rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.main{
+    /* background: linear-gradient(to right,blue,red); */
+    /* animation-name: bkg;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    backdrop-filter: blur(10px); */
+    
+}
+
+.main-container{
+   
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 1rem 3rem;
+}
+
+.main-pagination{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:480px){
+    .main-container{
+        justify-content: center;
+    }
+}

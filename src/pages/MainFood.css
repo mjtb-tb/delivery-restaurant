@@ -1,0 +1,115 @@
+.mainFood-top{
+    background: url('../../public/images/mainfood.jpeg');
+    background-position: center;
+}
+
+.mainFood-top-overlay{
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+}
+
+.mainFood-top-imageContainer{
+    max-width: 600px;
+    min-width: 200px;
+}
+
+.mainFood-top-img{
+    width: 100%;
+}
+
+.mainFood-main{
+    margin: 1rem;
+}
+
+.mainFood-main-title{
+    direction: rtl;
+    font-size: 30px;
+    margin: 1rem 0;
+    color: #6200EA;
+    border: solid 1px white;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 6px 2px white;
+}
+
+.mainFood-main-description{
+    direction: rtl;
+    font-size: 20px;
+    text-align: justify;
+    /* user-select: none; */
+    border: solid 1px white;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 0 6px 2px white;
+}
+
+
+.mainFood-main-foodCount{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    border: solid 1px white;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 0 6px 2px white;
+}
+
+.mainFood-main-foodCount-left{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.mainFood-main-foodCount-left-minusBtn{
+    font-size: 40px;
+    font-weight: bold;
+    transition: all 400ms ease;
+    color: red;
+    cursor: pointer;
+}
+
+.mainFood-main-foodCount-left-minusBtn:hover{
+    color: #B71C1C;
+}
+
+.mainFood-main-foodCount-left-count{
+    font-size: 40px;
+    user-select: none;
+}
+
+.mainFood-main-foodCount-left-addBtn{
+    font-size: 40px;
+    transition: all 400ms ease;
+    color: green;
+    cursor: pointer;
+}
+
+.mainFood-main-foodCount-left-addBtn:hover{
+    color: #1B5E20;
+}
+
+.mainFood-main-foodCount-right{
+    user-select: none;
+    font-size: 40px;
+    direction: rtl;
+    color: #6200EA;
+}
+
+.mainFood-main-orderBtn-container{
+    display: flex;
+    justify-content: center;
+}
+
+.mainFood-main-orderBtn{
+    font-size: 25px;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #4FC3F7;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.mainFood-main-orderBtn:hover{
+    background-color: #03A9F4;
+}
