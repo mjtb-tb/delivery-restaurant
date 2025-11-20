@@ -62,7 +62,7 @@ a{
 
   width: 210px;
   height: 100vh;
-  background-color: aqua;
+  background-color: #880E4F;
   padding: 1rem;
 
 }
@@ -74,9 +74,15 @@ a{
 
 .sidbar-top-btn{
   border: none;
-  border-radius: 50%;
-  background-color: aliceblue;
+  border-radius: 40%;
+  background-color: #D50000;
   padding: 0.5rem;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+
+.sidbar-top-btn:hover{
+  background-color: #E53935;
 }
 
 .sidebar-categories{
@@ -86,4 +92,5 @@ a{
 .sidbar-categories-item{
   display: block;
   margin: 0.5rem 0;
+  color: aliceblue;
 }

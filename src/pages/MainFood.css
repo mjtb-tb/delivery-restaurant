@@ -113,3 +113,134 @@
 .mainFood-main-orderBtn:hover{
     background-color: #03A9F4;
 }
+
+/* start form styles*/
+.mainfood-form-container{
+    backdrop-filter: blur(4px);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    /* display: flex; */
+    display: none;
+    justify-content: center;
+}
+
+.formIsOpened{
+    display: flex;
+}
+
+.mainfood-form{
+    width: 350px;
+    height: 130px;
+    background-color: #E0E0E0;
+    margin-top: 6rem;
+    border-radius: 0.5rem;
+}
+
+.mainfood-form-content{
+    padding: 1rem;
+}
+
+.mainfood-form-content-text{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.mainfood-form-content-details{
+    display: flex;
+    justify-content:space-evenly;
+    margin: 0.5rem 0;
+}
+
+.mainfood-form-content-details-foodName{
+    display: flex;
+    align-items: center;
+}
+
+.mainfood-form-content-details-foodName-title{
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    color: #006064;
+
+}
+
+.mainfood-form-content-details-foodName-text{
+    font-size: 1.2rem;
+}
+
+.mainfood-form-content-details-foodCount{
+    display: flex;
+    align-items: center;
+}
+
+.mainfood-form-content-details-foodCount-title{
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    color: #006064;
+}
+
+.mainfood-form-content-details-foodCount-text{
+    font-size: 1.2rem;
+}
+
+.mainfood-form-content-btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.mainfood-form-content-confrimBtn{
+    font-size: 1.5rem;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #00E676;
+    transition: all 400ms ease;
+}
+
+.mainfood-form-content-confrimBtn:hover{
+    background-color: #00C853;
+}
+
+.mainfood-form-content-cancelBtn{
+    font-size: 1.5rem;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #FF1744;
+    transition: all 400ms ease;
+}
+
+.mainfood-form-content-cancelBtn:hover{
+    background-color:#D50000 ;
+}
+
+/* finish form styles*/
+
+.message{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    display: none;
+    justify-content: center;
+    margin-top: 2rem;
+    z-index: 100;
+}
+
+.messageShow{
+    display: flex;
+}
+
+.message-content{
+    background-color: #00C853;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.message-text{
+    font-size: 1.3rem;
+}

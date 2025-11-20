@@ -53,6 +53,7 @@
 
 .box-bottom-price-priceText{
     color: green;
+    direction: rtl;
 }
 
 .box-bottom-price{
@@ -60,7 +61,7 @@
     justify-content: space-between;
 }
 
-@media screen and (max-width:380px){
+@media screen and (max-width:460px){
     .box{
         width: 260px;
     }

@@ -31,6 +31,9 @@ export default function Slider({data}){
                     modules={[Pagination, Navigation]}
                     className="mySwiper"
                     breakpoints={{
+                        460:{
+                            slidesPerView:2
+                        },
                         640:{
                             slidesPerView:3
                         },

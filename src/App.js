@@ -5,12 +5,15 @@ import { useState } from 'react'
 import Header from "./components/header/Header"
 import Home from './pages/Home'
 import MainFood from './pages/MainFood'
+import Footer from './components/Footer/Footer'
 import { Link } from 'react-router-dom'
 import Breakfast from './pages/Breakfast'
+import Fastfood from './pages/Fastfood'
+import Lunch from './pages/Lunch'
 
 export default function App(){
 
-  let [sideBarIsOpened , setSideBarIsOpened] = useState(true)
+  let [sideBarIsOpened , setSideBarIsOpened] = useState(false)
 
   function sidebarOpen(){
     setSideBarIsOpened(true)
@@ -22,8 +25,11 @@ export default function App(){
 
   let router = useRoutes([
     {path:'/', element:<><Home  ></Home></>,},
-    {path:'/:id', element:<><MainFood ></MainFood></>},
     {path:'/breakfast', element:<><Breakfast ></Breakfast></>},
+    {path:'/fastfood', element:<><Fastfood ></Fastfood></>},
+    {path:'/lunch', element:<><Lunch ></Lunch></>},
+    {path:'/:id', element:<><MainFood ></MainFood></>},
+
     
   ])
 
@@ -31,16 +37,17 @@ export default function App(){
     <>
       <Header OnSidebarOpen={sidebarOpen}></Header>
       {router}
-      <div className={`sidebar-overlay ${sideBarIsOpened?'sidebar-overlay-open':''}`} >
+      <Footer></Footer>
+      <div className={`sidebar-overlay ${sideBarIsOpened?'sidebar-overlay-open':''}`} onClick={sidebarClose} >
         <div className="sidebar">
           <div className="sidbar-top">
-            <div className='sidbar-top-btn' onClick={sidebarClose}>exit</div>
+            <div className='sidbar-top-btn' onClick={sidebarClose}>خروج</div>
           </div>
           <hr />
           <div className="sidebar-categories">
             <Link to='/breakfast' className="sidbar-categories-item">صبحانه</Link>
-            <Link className="sidbar-categories-item">ناهار و شام</Link>
-            <Link className="sidbar-categories-item">فست فود</Link>
+            <Link to='/lunch' className="sidbar-categories-item">ناهار و شام</Link>
+            <Link to='/fastfood' className="sidbar-categories-item">فست فود</Link>
           </div>
         </div>  
       </div>

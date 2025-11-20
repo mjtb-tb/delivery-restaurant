@@ -4,6 +4,9 @@
     align-items: center;
     padding: 0.3rem;
     background-color: #990033;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .header-sidebarBtn{
@@ -60,9 +63,16 @@
 .header-homeBtn{
     font-size: 2rem;
     border-radius: 50%;
-    border: solid 2px black;
+    border: solid 2px gold;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0.3rem;
+    color: gold;
+    transition: all 400ms ease;
+}
+
+.header-homeBtn:hover{
+    color: #990033;
+    background-color: gold;
 }
